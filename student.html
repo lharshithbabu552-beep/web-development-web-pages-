@@ -1,0 +1,150 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Dashboard</title>
+
+    <style>
+        body {
+            font-family: Arial;
+            background: lightblue;
+            margin: 0;
+        }
+
+        h1, footer {
+            background: navy;
+            color: white;
+            text-align: center;
+            padding: 15px;
+        }
+
+        .menu {
+            background: #222244;
+            text-align: center;
+            padding: 15px;
+        }
+
+        .menu a {
+            display: inline-block;
+            background: #0077cc;
+            color: white;
+            padding: 10px;
+            margin: 5px;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        h2 {
+            color: navy;
+        }
+
+        .box {
+            display: none;
+            background: white;
+            padding: 20px;
+            margin: 20px auto;
+            max-width: 650px;
+            border-radius: 10px;
+        }
+
+        .box:target {
+            display: block;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            border: 1px solid navy;
+            padding: 10px;
+            text-align: center;
+        }
+
+        th {
+            background: navy;
+            color: white;
+        }
+
+        progress {
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+
+<h1>Student Academic Dashboard</h1>
+
+<div class="menu">
+    <a href="#details">Details</a>
+    <a href="#results">Results</a>
+    <a href="#attendance">Attendance</a>
+    <a href="#exams">Exams</a>
+    <a href="#announcements">Announcements</a>
+</div>
+
+<div class="box" id="details">
+    <h2>Student Details</h2>
+    <p>Name: Rahul</p>
+    <p>Roll Number: 101</p>
+    <p>Course: B.Tech CSE</p>
+    <p>Semester: 1</p>
+</div>
+
+<div class="box" id="results">
+    <h2>Semester Results</h2>
+
+    <table>
+        <tr>
+            <th>Subject</th>
+            <th>Marks</th>
+        </tr>
+        <tr>
+            <td>Mathematics</td>
+            <td>85</td>
+        </tr>
+        <tr>
+            <td>Python</td>
+            <td>90</td>
+        </tr>
+        <tr>
+            <td>Physics</td>
+            <td>80</td>
+        </tr>
+    </table>
+</div>
+
+<div class="box" id="attendance">
+    <h2>Attendance</h2>
+
+    <p>Mathematics: 90%</p>
+    <progress value="90" max="100"></progress>
+
+    <p>Python: 85%</p>
+    <progress value="85" max="100"></progress>
+
+    <p>Physics: 80%</p>
+    <progress value="80" max="100"></progress>
+</div>
+
+<div class="box" id="exams">
+    <h2>Examination Schedule</h2>
+    <p>Mathematics: 10 November</p>
+    <p>Python: 12 November</p>
+    <p>Physics: 15 November</p>
+</div>
+
+<div class="box" id="announcements">
+    <h2>Announcements</h2>
+    <p>Submit assignments on time.</p>
+    <p>Prepare for semester examinations.</p>
+</div>
+
+<footer>
+    Student Dashboard | 2026
+</footer>
+
+</body>
+</html>
